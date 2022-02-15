@@ -13,7 +13,6 @@ class MyTopTipView: UIView {
   
   init(
     viewColor: UIColor,
-    viewWidth: CGFloat,
     tipStartX: CGFloat,
     tipWidth: CGFloat,
     tipHeight: CGFloat

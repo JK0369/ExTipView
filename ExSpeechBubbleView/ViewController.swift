@@ -14,7 +14,6 @@ class ViewController: UIViewController {
   
   private lazy var myView = MyTopTipView(
     viewColor: UIColor.systemOrange,
-    viewWidth: self.width,
     tipStartX: 70.5,
     tipWidth: 11.0,
     tipHeight: 6.0
