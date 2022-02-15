@@ -16,9 +16,11 @@ class MyTipView: UIView {
     startXWidth: CGFloat,
     tipWidth: CGFloat,
     tipHeight: CGFloat,
-    tipColor: UIColor
+    viewColor: UIColor
   ) {
     super.init(frame: .zero)
+    self.backgroundColor = viewColor
+    
     let path = CGMutablePath()
 
     let tipWidthCenter = tipWidth / 2.0
@@ -31,7 +33,7 @@ class MyTipView: UIView {
 
     let shape = CAShapeLayer()
     shape.path = path
-    shape.fillColor = tipColor.cgColor
+    shape.fillColor = viewColor.cgColor
 
     self.layer.insertSublayer(shape, at: 0)
     self.layer.masksToBounds = false

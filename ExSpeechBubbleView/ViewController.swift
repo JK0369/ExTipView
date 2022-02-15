@@ -17,13 +17,12 @@ class ViewController: UIViewController {
     startXWidth: 70.5,
     tipWidth: 11.0,
     tipHeight: -6.0,
-    tipColor: UIColor.systemOrange
+    viewColor: UIColor.systemOrange
   )
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.myView.backgroundColor = .systemOrange
     self.view.addSubview(self.myView)
     self.myView.snp.makeConstraints {
       $0.center.equalToSuperview()
