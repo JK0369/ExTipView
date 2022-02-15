@@ -9,8 +9,6 @@ import UIKit
 import SnapKit
 
 class MyTopTipView: UIView {
-  private let informationLabel = UILabel()
-  
   init(
     viewColor: UIColor,
     tipStartX: CGFloat,
@@ -38,16 +36,18 @@ class MyTopTipView: UIView {
     self.layer.masksToBounds = false
     self.layer.cornerRadius = 16
     
-    self.setupLabel()
+    self.addLabel()
   }
   
-  private func setupLabel() {
-    self.informationLabel.textColor = .white
-    self.informationLabel.text = "iOS 앱 개발 알아가기, jake블로그, tipView 포스팅 글"
-    self.informationLabel.numberOfLines = 0
-    self.informationLabel.lineBreakMode = .byCharWrapping // 글자 단위로 줄바꿈 (디폴트는 어절 단위)
-    self.addSubview(self.informationLabel)
-    self.informationLabel.snp.makeConstraints {
+  private func addLabel() {
+    let titleLabel = UILabel()
+    titleLabel.textColor = .white
+    titleLabel.text = "iOS 앱 개발 알아가기, jake블로그, tipView 포스팅 글"
+    titleLabel.numberOfLines = 0
+    titleLabel.lineBreakMode = .byCharWrapping // 글자 단위로 줄바꿈 (디폴트는 어절 단위)
+    
+    self.addSubview(titleLabel)
+    titleLabel.snp.makeConstraints {
       $0.top.bottom.equalToSuperview().inset(10)
       $0.left.right.equalToSuperview().inset(16)
     }
