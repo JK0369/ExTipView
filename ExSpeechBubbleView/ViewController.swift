@@ -12,12 +12,12 @@ class ViewController: UIViewController {
   private let width = 177.0
   private let height = 56.0
   
-  private lazy var myView = MyTipView(
+  private lazy var myView = MyTopTipView(
     viewColor: UIColor.systemOrange,
     viewWidth: self.width,
     tipStartX: 70.5,
     tipWidth: 11.0,
-    tipHeight: -6.0
+    tipHeight: 6.0
   )
   
   override func viewDidLoad() {

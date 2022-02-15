@@ -1,5 +1,5 @@
 //
-//  MyTipView.swift
+//  MyTopTipView.swift
 //  ExSpeechBubbleView
 //
 //  Created by Jake.K on 2022/02/15.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class MyTipView: UIView {
+class MyTopTipView: UIView {
   private let informationLabel = UILabel()
   
   init(
@@ -27,7 +27,7 @@ class MyTipView: UIView {
     let endXWidth = tipStartX + tipWidth
     
     path.move(to: CGPoint(x: tipStartX, y: 0))
-    path.addLine(to: CGPoint(x: tipStartX + tipWidthCenter, y: tipHeight))
+    path.addLine(to: CGPoint(x: tipStartX + tipWidthCenter, y: -tipHeight))
     path.addLine(to: CGPoint(x: endXWidth, y: 0))
     path.addLine(to: CGPoint(x: 0, y: 0))
 

@@ -15,7 +15,7 @@
 		C6B2232127BA5A020061D74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B2232027BA5A020061D74F /* Assets.xcassets */; };
 		C6B2232427BA5A020061D74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2232227BA5A020061D74F /* LaunchScreen.storyboard */; };
 		C6B2232C27BA5B530061D74F /* SpeechBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2232B27BA5B530061D74F /* SpeechBubbleView.swift */; };
-		C6DD5CAE27BB42150025C44F /* MyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD5CAD27BB42150025C44F /* MyTipView.swift */; };
+		C6DD5CAE27BB42150025C44F /* MyTopTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD5CAD27BB42150025C44F /* MyTopTipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		C6B2232327BA5A020061D74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6B2232527BA5A020061D74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6B2232B27BA5B530061D74F /* SpeechBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBubbleView.swift; sourceTree = "<group>"; };
-		C6DD5CAD27BB42150025C44F /* MyTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTipView.swift; sourceTree = "<group>"; };
+		C6DD5CAD27BB42150025C44F /* MyTopTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTopTipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				C6B2231727BA5A000061D74F /* AppDelegate.swift */,
 				C6B2231927BA5A000061D74F /* SceneDelegate.swift */,
 				C6B2231B27BA5A000061D74F /* ViewController.swift */,
-				C6DD5CAD27BB42150025C44F /* MyTipView.swift */,
+				C6DD5CAD27BB42150025C44F /* MyTopTipView.swift */,
 				C6B2232B27BA5B530061D74F /* SpeechBubbleView.swift */,
 				C6B2231D27BA5A000061D74F /* Main.storyboard */,
 				C6B2232027BA5A020061D74F /* Assets.xcassets */,
@@ -215,7 +215,7 @@
 				C6B2232C27BA5B530061D74F /* SpeechBubbleView.swift in Sources */,
 				C6B2231C27BA5A000061D74F /* ViewController.swift in Sources */,
 				C6B2231827BA5A000061D74F /* AppDelegate.swift in Sources */,
-				C6DD5CAE27BB42150025C44F /* MyTipView.swift in Sources */,
+				C6DD5CAE27BB42150025C44F /* MyTopTipView.swift in Sources */,
 				C6B2231A27BA5A000061D74F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
