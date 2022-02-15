@@ -12,11 +12,11 @@ class MyTipView: UIView {
   private let informationLabel = UILabel()
   
   init(
+    viewColor: UIColor,
     viewWidth: CGFloat,
-    startXWidth: CGFloat,
+    tipStartX: CGFloat,
     tipWidth: CGFloat,
-    tipHeight: CGFloat,
-    viewColor: UIColor
+    tipHeight: CGFloat
   ) {
     super.init(frame: .zero)
     self.backgroundColor = viewColor
@@ -24,10 +24,10 @@ class MyTipView: UIView {
     let path = CGMutablePath()
 
     let tipWidthCenter = tipWidth / 2.0
-    let endXWidth = startXWidth + tipWidth
+    let endXWidth = tipStartX + tipWidth
     
-    path.move(to: CGPoint(x: startXWidth, y: 0))
-    path.addLine(to: CGPoint(x: startXWidth + tipWidthCenter, y: tipHeight))
+    path.move(to: CGPoint(x: tipStartX, y: 0))
+    path.addLine(to: CGPoint(x: tipStartX + tipWidthCenter, y: tipHeight))
     path.addLine(to: CGPoint(x: endXWidth, y: 0))
     path.addLine(to: CGPoint(x: 0, y: 0))
 
