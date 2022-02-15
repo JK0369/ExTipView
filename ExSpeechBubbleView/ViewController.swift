@@ -6,14 +6,28 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
-
+  private let width = 177.0
+  private let height = 56.0
+  
+  private lazy var myView = MyTipView(
+    viewWidth: self.width,
+    startXWidth: 70.5,
+    tipWidth: 11.0,
+    tipHeight: -6.0,
+    tipColor: UIColor.systemOrange
+  )
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    self.myView.backgroundColor = .systemOrange
+    self.view.addSubview(self.myView)
+    self.myView.snp.makeConstraints {
+      $0.center.equalToSuperview()
+      $0.width.equalTo(self.width)
+    }
   }
-
-
 }
-

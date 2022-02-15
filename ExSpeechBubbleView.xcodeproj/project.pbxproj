@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADD53CCF06B307CD61FF0DC1 /* Pods_ExSpeechBubbleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C51C8732C510A5AA8089CF1 /* Pods_ExSpeechBubbleView.framework */; };
 		C6B2231827BA5A000061D74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2231727BA5A000061D74F /* AppDelegate.swift */; };
 		C6B2231A27BA5A000061D74F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2231927BA5A000061D74F /* SceneDelegate.swift */; };
 		C6B2231C27BA5A000061D74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2231B27BA5A000061D74F /* ViewController.swift */; };
 		C6B2231F27BA5A000061D74F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2231D27BA5A000061D74F /* Main.storyboard */; };
 		C6B2232127BA5A020061D74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B2232027BA5A020061D74F /* Assets.xcassets */; };
 		C6B2232427BA5A020061D74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B2232227BA5A020061D74F /* LaunchScreen.storyboard */; };
+		C6B2232C27BA5B530061D74F /* SpeechBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B2232B27BA5B530061D74F /* SpeechBubbleView.swift */; };
+		C6DD5CAE27BB42150025C44F /* MyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD5CAD27BB42150025C44F /* MyTipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B7917F216C13C568118AE4B /* Pods-ExSpeechBubbleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExSpeechBubbleView.release.xcconfig"; path = "Target Support Files/Pods-ExSpeechBubbleView/Pods-ExSpeechBubbleView.release.xcconfig"; sourceTree = "<group>"; };
+		4C51C8732C510A5AA8089CF1 /* Pods_ExSpeechBubbleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExSpeechBubbleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B16E359957ECC02F3C917AD /* Pods-ExSpeechBubbleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExSpeechBubbleView.debug.xcconfig"; path = "Target Support Files/Pods-ExSpeechBubbleView/Pods-ExSpeechBubbleView.debug.xcconfig"; sourceTree = "<group>"; };
 		C6B2231427BA5A000061D74F /* ExSpeechBubbleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExSpeechBubbleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B2231727BA5A000061D74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6B2231927BA5A000061D74F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		C6B2232027BA5A020061D74F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6B2232327BA5A020061D74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6B2232527BA5A020061D74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B2232B27BA5B530061D74F /* SpeechBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBubbleView.swift; sourceTree = "<group>"; };
+		C6DD5CAD27BB42150025C44F /* MyTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD53CCF06B307CD61FF0DC1 /* Pods_ExSpeechBubbleView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27009B4E8967401F2C77AA1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B16E359957ECC02F3C917AD /* Pods-ExSpeechBubbleView.debug.xcconfig */,
+				0B7917F216C13C568118AE4B /* Pods-ExSpeechBubbleView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C6B2230B27BA5A000061D74F = {
 			isa = PBXGroup;
 			children = (
 				C6B2231627BA5A000061D74F /* ExSpeechBubbleView */,
 				C6B2231527BA5A000061D74F /* Products */,
+				27009B4E8967401F2C77AA1F /* Pods */,
+				EA05C959052DAB1CC002EF54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +79,22 @@
 				C6B2231727BA5A000061D74F /* AppDelegate.swift */,
 				C6B2231927BA5A000061D74F /* SceneDelegate.swift */,
 				C6B2231B27BA5A000061D74F /* ViewController.swift */,
+				C6DD5CAD27BB42150025C44F /* MyTipView.swift */,
+				C6B2232B27BA5B530061D74F /* SpeechBubbleView.swift */,
 				C6B2231D27BA5A000061D74F /* Main.storyboard */,
 				C6B2232027BA5A020061D74F /* Assets.xcassets */,
 				C6B2232227BA5A020061D74F /* LaunchScreen.storyboard */,
 				C6B2232527BA5A020061D74F /* Info.plist */,
 			);
 			path = ExSpeechBubbleView;
+			sourceTree = "<group>";
+		};
+		EA05C959052DAB1CC002EF54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C51C8732C510A5AA8089CF1 /* Pods_ExSpeechBubbleView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6B2232827BA5A020061D74F /* Build configuration list for PBXNativeTarget "ExSpeechBubbleView" */;
 			buildPhases = (
+				27F5716DA778782D87C96684 /* [CP] Check Pods Manifest.lock */,
 				C6B2231027BA5A000061D74F /* Sources */,
 				C6B2231127BA5A000061D74F /* Frameworks */,
 				C6B2231227BA5A000061D74F /* Resources */,
+				BBE31D0C965558B69F165DD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +165,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27F5716DA778782D87C96684 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExSpeechBubbleView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBE31D0C965558B69F165DD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExSpeechBubbleView/Pods-ExSpeechBubbleView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExSpeechBubbleView/Pods-ExSpeechBubbleView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExSpeechBubbleView/Pods-ExSpeechBubbleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C6B2231027BA5A000061D74F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B2232C27BA5B530061D74F /* SpeechBubbleView.swift in Sources */,
 				C6B2231C27BA5A000061D74F /* ViewController.swift in Sources */,
 				C6B2231827BA5A000061D74F /* AppDelegate.swift in Sources */,
+				C6DD5CAE27BB42150025C44F /* MyTipView.swift in Sources */,
 				C6B2231A27BA5A000061D74F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +360,7 @@
 		};
 		C6B2232927BA5A020061D74F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B16E359957ECC02F3C917AD /* Pods-ExSpeechBubbleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +389,7 @@
 		};
 		C6B2232A27BA5A020061D74F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7917F216C13C568118AE4B /* Pods-ExSpeechBubbleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
